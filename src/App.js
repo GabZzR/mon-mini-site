@@ -7,8 +7,10 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import Gallery from './Components/Gallery';
 import Contact from './Components/Contact';
+import Video from './Components/Trailer';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Trailer from './Components/Trailer';
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/trailer" element={<Trailer />} />
         </Routes>
       </BrowserRouter>
       <Footer />
